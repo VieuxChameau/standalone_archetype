@@ -19,5 +19,5 @@ Then use the [script createProject](https://github.com/VieuxChameau/standalone_a
 
 Or a simple command line
 ```sh
-mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=org.vieuxchameau -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT  -DartifactId=$1 -DinteractiveMode=false
+mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=org.vieuxchameau -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT  -DartifactId=someProjectId -DinteractiveMode=false
 ```
