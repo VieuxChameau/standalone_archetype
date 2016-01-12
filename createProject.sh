@@ -5,4 +5,6 @@ if [ "$#" -lt 1 ]; then
     exit
 fi
 
-mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=org.vieuxchameau -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT  -DartifactId=$1 -DinteractiveMode=false
+GROUP_ID="org.vieuxchameau"
+
+mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=${GROUP_ID} -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=${GROUP_ID}  -DartifactId=$1 -DinteractiveMode=false -Dpackage=${GROUP_ID}

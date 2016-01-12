@@ -1,7 +1,7 @@
 # standalone_archetype
 
 Maven archetype that create an empty maven project including :
-* pom.xml with basic dependencies for test : junit and assertJ
+* pom.xml with basic dependencies for test : junit, assertJ and mockito
 * .gitignore
 * empty directories
 
@@ -19,5 +19,5 @@ Then use the [script createProject](https://github.com/VieuxChameau/standalone_a
 
 Or a simple command line
 ```sh
-mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=org.vieuxchameau -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT  -DartifactId=someProjectId -DinteractiveMode=false
+mvn archetype:generate -DarchetypeRepository=local -DarchetypeGroupId=org.vieuxchameau -DarchetypeArtifactId=standalone-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=org.vieuxchameau -DartifactId=someProjectId -DinteractiveMode=false -Dpacakge=org.vieuxchameau
 ```
